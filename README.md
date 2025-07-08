@@ -11,4 +11,6 @@ My solutions to DSA/LeetCode problems in JavaScript
 - ✅ Solved "Linked List Cycl"
 
 ### 🚀 Week 22 Progress
-- ✅ Redid "Linked List Cycl"
+- ✅ Redid "Contains Duplicate"
+- ✅ Redid "Two Sum"
+- ✅ Solved "Valid Parentheses"

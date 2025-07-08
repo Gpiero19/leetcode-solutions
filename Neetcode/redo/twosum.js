@@ -1,18 +1,19 @@
 
 function twoSum(nums, target) {
-    let firstNumber = 0;
-    // let positionArray = new [];
+    const prevMap = new Map();
 
     for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
+        const diff = target - nums[i];
 
-        if (nums[i] + nums[j] === target) {
-            // console.log(nums[i], nums[j])
-            return [i, j]
-       }
-       }
-    }   
+        if (prevMap.has(diff)) {
+            return [prevMap.get(diff), i];
+        }
+        prevMap.set(nums[i], i);
+    }
+    console.log(prevMap)
+    return [];
 }
+
 
 nums = [3,4,5,6]
 // nums = [4,5,6]

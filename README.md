@@ -10,7 +10,7 @@ My solutions to DSA/LeetCode problems in JavaScript
 - ✅ Solved "Merge Two Sorted Lists"
 - ✅ Solved "Linked List Cycl"
 
-### 🚀 Week 22 Progress
+### 🚀 Week 28 Progress
 - ✅ Redid "Contains Duplicate"
 - ✅ Redid "Two Sum"
 - ✅ Solved "Valid Parentheses"

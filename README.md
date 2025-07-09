@@ -11,7 +11,8 @@ My solutions to DSA/LeetCode problems in JavaScript
 - ✅ Solved "Linked List Cycl"
 
 ### 🚀 Week 28 Progress
-- ✅ Redid "Contains Duplicate"
-- ✅ Redid "Two Sum"
 - ✅ Solved "Valid Parentheses"
 - ✅ Solved "Binary Search"
+
+- ✅ Redid "Contains Duplicate"
+- ✅ Redid "Two Sum"

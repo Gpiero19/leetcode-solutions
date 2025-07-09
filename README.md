@@ -14,3 +14,4 @@ My solutions to DSA/LeetCode problems in JavaScript
 - ✅ Redid "Contains Duplicate"
 - ✅ Redid "Two Sum"
 - ✅ Solved "Valid Parentheses"
+- ✅ Solved "Binary Search"

@@ -4,12 +4,16 @@ function search(nums, target) {
 
     while (start <= end) {
         let mid = Math.floor((start+end)/2)
-
+         
+        // middle index matches the target
         if (target === nums[mid]) return mid
 
+        //target is higher than middle index in array
         if (target > nums[mid]) {
+            // we move the starting point to the middle + 1 index
             start = mid + 1
         } else {
+            // we  move the end of the search to the middle - 1
             end = mid - 1
         }
     }

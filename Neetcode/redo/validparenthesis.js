@@ -6,7 +6,7 @@ function validParenthesis (s) {
         "}" : "{",
     }
 
-    for (let c in s) {
+    for (let c of s) {
         if (closeToOpen[c]) {
             if (stack.length > 0 && stack[stack.length-1] == closeToOpen[c]) {
                 stack.pop()
@@ -20,6 +20,6 @@ function validParenthesis (s) {
     return stack.length === 0
 }
 
-s = "[{({[{)}]})}]" 
+s = "[]" 
 
 console.log(validParenthesis(s))

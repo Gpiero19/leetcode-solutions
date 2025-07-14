@@ -8,11 +8,18 @@ My solutions to DSA/LeetCode problems in JavaScript
 - ✅ Solved "Two Sum"
 - ✅ Solved "Best Time to Buy And Sell Stock"
 - ✅ Solved "Merge Two Sorted Lists"
-- ✅ Solved "Linked List Cycl"
+- ✅ Solved "Linked List Cycle"
 
 ### 🚀 Week 28 Progress
 - ✅ Solved "Valid Parentheses"
 - ✅ Solved "Binary Search"
-
 - ✅ Redid "Contains Duplicate"
+- ✅ Redid "Valid Parentheses"
 - ✅ Redid "Two Sum"
+- ✅ Redid "Merge Two Sorted Lists"
+- ✅ Redid "Linked List Cycle"
+- ✅ Redid "Valid Anagram"
+
+
+### 🚀 Week 29 Progress
+- ✅ Redid "Valid Palindrome "

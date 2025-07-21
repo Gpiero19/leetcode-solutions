@@ -23,3 +23,5 @@ My solutions to DSA/LeetCode problems in JavaScript
 
 ### 🚀 Week 29 Progress
 - ✅ Redid "Valid Palindrome "
+- ✅ Solved "Group Anagrams"
+

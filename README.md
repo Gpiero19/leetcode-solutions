@@ -28,3 +28,4 @@ My solutions to DSA/LeetCode problems in JavaScript
 
 ### 🚀 Week 30 Progress
 - ✅ Solved "Minimum Stack"
+- ✅ Solved "3 Sum"

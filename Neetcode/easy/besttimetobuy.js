@@ -8,7 +8,7 @@ function maxProfit(prices) {
             let profit = prices[sell] - prices[buy]
             maxProfit = Math.max(maxProfit, profit)
         } else {
-            but = sell
+            buy = sell
         }
         sell ++
     }

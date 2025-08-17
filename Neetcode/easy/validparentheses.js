@@ -1,26 +1,36 @@
 
+// function isValid(s) {
+//     let stack = [];
+//     let closeToOpen = {
+//         ')' : '(',
+//         ']' : '[',
+//         '}' : '{',
+//     }
+
+//     for (let c of s) {
+//         if (closeToOpen[c]) {
+//             if (stack.length > 0 && stack[stack.length-1] === closeToOpen[c]) {
+//                 stack.pop()
+//             } else {
+//                 return false
+//             }
+//         } else {
+//             stack.push(c)
+//         }
+//     }
+//     return stack.length === 0;
+// }
+
+// let s = "{([])}";
+
+// console.log(isValid(s))
+
+
 function isValid(s) {
-    let stack = [];
-    let closeToOpen = {
-        ')' : '(',
-        ']' : '[',
-        '}' : '{',
+    while (s.includes('()') || s.includes('{}') || s.includes('[]')) {
+        s = s.replace('()', '');
+        s = s.replace('{}', '');
+        s = s.replace('[]', '');
     }
-
-    for (let c of s) {
-        if (closeToOpen[c]) {
-            if (stack.length > 0 && stack[stack.length-1] === closeToOpen[c]) {
-                stack.pop()
-            } else {
-                return false
-            }
-        } else {
-            stack.push(c)
-        }
-    }
-    return stack.length === 0;
+    return s === '';
 }
-
-let s = "{([])}";
-
-console.log(isValid(s))

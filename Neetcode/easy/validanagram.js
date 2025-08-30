@@ -4,39 +4,51 @@ t = "carrace";
 // Output: true
 
 
-function isAnagram(s, t) {
-    let letterCountS = {};
-    let letterCountT = {};
+// function isAnagram(s, t) {
+//     let letterCountS = {};
+//     let letterCountT = {};
 
-    if (s.length != t.length) {
-        console.log(false)
-        return false
-    } else {
-        for (let letter of s) {
-            letterCountS[letter] = (letterCountS[letter] || 0) + 1
+//     if (s.length != t.length) {
+//         console.log(false)
+//         return false
+//     } else {
+//         for (let letter of s) {
+//             letterCountS[letter] = (letterCountS[letter] || 0) + 1
 
-        }
-        for (let letter of t) {
-            letterCountT[letter] = (letterCountT[letter] || 0) + 1
-        }
-    }
-    return checkObjects(letterCountS,letterCountT)
+//         }
+//         for (let letter of t) {
+//             letterCountT[letter] = (letterCountT[letter] || 0) + 1
+//         }
+//     }
+//     return checkObjects(letterCountS,letterCountT)
     
-    function checkObjects(obj1, obj2) {
-        let keys1 = Object.keys(obj1)
-        let keys2 = Object.keys(obj2)
+//     function checkObjects(obj1, obj2) {
+//         let keys1 = Object.keys(obj1)
+//         let keys2 = Object.keys(obj2)
 
-        if (keys1.length != keys2.length) {
-            return false
-        }
-        for (let key of keys1) {
-            if (obj1[key] !== obj2[key]) {
-                return false
-            }
-        }
-        console.log(true)
-        return true
+//         if (keys1.length != keys2.length) {
+//             return false
+//         }
+//         for (let key of keys1) {
+//             if (obj1[key] !== obj2[key]) {
+//                 return false
+//             }
+//         }
+//         console.log(true)
+//         return true
+//     }
+// }
+
+console.log(isAnagram(s,t))
+
+// Sorting
+function isAnagram(s, t) {
+    if (s.length !== t.length) {
+        return false;
     }
+
+    let sSort = s.split('').sort().join();
+    let tSort = t.split('').sort().join();
+    return sSort == tSort;
 }
 
-isAnagram(s,t)
